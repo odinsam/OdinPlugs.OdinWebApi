@@ -49,7 +49,10 @@ namespace OdinPlugs.OdinWebApi.OdinMvcCore.OdinFilter
                 odinFilter = new OdinFilter(options, context);
                 // ip 检测
                 string ip = odinFilter.Executing_IpValidate();
-                context.RouteData.Values.Add("ip", ip);
+                if (!context.RouteData.Values.Keys.Contains("ip"))
+                    context.RouteData.Values.Add("ip", ip);
+                else
+                    context.RouteData.Values["ip"] = ip;
                 string strParams = string.Empty;
                 //api链路检测
                 odinFilter.Executing_ApiLink();
@@ -74,8 +77,8 @@ namespace OdinPlugs.OdinWebApi.OdinMvcCore.OdinFilter
                 apiInvokerRecordModel.ApiEndTime = DateTimeOffset.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
 
                 apiInvokerRecordModel.ElaspedTime = elapseTime;
-                var apiResult = context.Result;
-                (context.Result as OdinActionResult).SnowFlakeId = apiInvokerModel.Id;
+                var apiResult = context.Result as OdinActionResult;
+                apiResult.SnowFlakeId = apiInvokerModel.Id;
                 apiInvokerModel.ReturnValue = JsonConvert.SerializeObject(apiResult);
 
                 var mongoHelper = OdinInjectCore.GetService<IOdinMongo>();

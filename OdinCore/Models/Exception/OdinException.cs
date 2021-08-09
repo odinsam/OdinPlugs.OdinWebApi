@@ -1,6 +1,6 @@
 using OdinPlugs.OdinInject;
 using OdinPlugs.OdinInject.InjectCore;
-using OdinPlugs.OdinInject.InjectPlugs.OdinErrorCodeInject;
+using OdinPlugs.OdinWebApi.OdinMAF.OdinInject.OdinErrorCodeInject;
 
 namespace OdinPlugs.OdinWebApi.OdinCore.Models.Exception
 {

@@ -20,7 +20,7 @@ namespace OdinPlugs.OdinWebApi.OdinMvcCore.OdinFilter
         private readonly IOdinMongo mongoHelper;
         public ApiInvokerResultFilter()
         {
-            this.options = OdinInjectCore.GetService<ConfigOptions>(); ;
+            this.options = OdinInjectCore.GetService<ConfigOptions>();
             this.mongoHelper = OdinInjectCore.GetService<IOdinMongo>();
         }
         public void OnResultExecuted(ResultExecutedContext context) { }

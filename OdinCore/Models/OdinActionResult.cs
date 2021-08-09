@@ -7,12 +7,12 @@ using Newtonsoft.Json;
 using OdinPlugs.OdinWebApi.OdinCore.Models.ErrorCode;
 using OdinPlugs.OdinInject.InjectCore;
 using OdinPlugs.OdinInject.InjectPlugs.OdinCacheManagerInject;
-using OdinPlugs.OdinInject.InjectPlugs.OdinErrorCodeInject;
 using OdinPlugs.OdinUtils.OdinExtensions.BasicExtensions.OdinString;
 using OdinPlugs.OdinUtils.OdinJson.ContractResolver;
 using OdinPlugs.OdinUtils.Utils.OdinHttp.Models;
 using OdinPlugs.OdinWebApi.OdinMvcCore.ViewModelValidate;
 using OdinPlugs.OdinWebApi.OdinMvcCore.ServicesCore.ServicesInterface;
+using OdinPlugs.OdinWebApi.OdinMAF.OdinInject.OdinErrorCodeInject;
 
 namespace OdinPlugs.OdinWebApi.OdinCore.Models
 {
