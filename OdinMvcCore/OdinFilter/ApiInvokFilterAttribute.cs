@@ -87,7 +87,7 @@ namespace OdinPlugs.OdinWebApi.OdinMvcCore.OdinFilter
                 var responseResult = JsonConvert.DeserializeObject<OdinActionResult>(apiInvokerRecordModel.ReturnValue);
                 if (responseResult.StatusCode != "ok")
                 {
-                    var apiInvokerCatchModel = apiInvokerModel.OdinTypeAdapterBuilder<Aop_ApiInvokerRecord_Model, Aop_ApiInvokerCatch_Model>();
+                    var apiInvokerCatchModel = apiInvokerModel.OdinAdapter<Aop_ApiInvokerRecord_Model, Aop_ApiInvokerCatch_Model>();
                     apiInvokerCatchModel.Ex = responseResult.Data as Exception;
                     apiInvokerCatchModel.ErrorMessage = responseResult.ErrorMessage;
                     apiInvokerCatchModel.ShowMessage = responseResult.Message;

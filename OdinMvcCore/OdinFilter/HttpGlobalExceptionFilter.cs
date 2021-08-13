@@ -47,7 +47,7 @@ namespace OdinPlugs.OdinWebApi.OdinMvcCore.OdinFilter
             #endregion
 
             #region    保存异常记录apiInvokerThrow到mongodb
-            var apiInvokerThrow = apiInvokerModel.OdinTypeAdapterBuilder<Aop_ApiInvokerRecord_Model, Aop_ApiInvokerThrow_Model>();
+            var apiInvokerThrow = apiInvokerModel.OdinAdapter<Aop_ApiInvokerRecord_Model, Aop_ApiInvokerThrow_Model>();
             // var apiInvokerThrow = OdinAutoMapper.DynamicMapper<Aop_ApiInvokerThrow_Model>(apiInvokerModel);
             apiInvokerThrow.Ex = context.Exception;
             apiInvokerThrow.ErrorMessage = context.Exception.Message;

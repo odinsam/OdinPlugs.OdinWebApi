@@ -24,12 +24,12 @@ namespace OdinPlugs.OdinWebApi.OdinMAF.OdinInject
                 .AddOdinTransientMongoDb(
                     opt => { opt.ConnectionString = _Options.MongoDb.MongoConnection; opt.DbName = _Options.MongoDb.Database; })
                 .AddOdinTransientRedis(
-                    opt => { opt.ConnectionString = _Options.Redis.Connection; opt.InstanceName = _Options.Redis.InstanceName; })
+                    opt => { opt.ConnectionString = _Options.Redis.ConnectionStrings; })
                 .AddOdinTransientCacheManager(
                     opt =>
                     {
                         opt.OptCm = _Options.CacheManager.Adapt<OdinPlugs.OdinInject.Models.CacheManagerModels.CacheManagerModel>();
-                        opt.OptRbmq = _Options.Redis.Adapt<RedisModel>();
+                        opt.OptRedis = _Options.Redis.Adapt<RedisModel>();
                     })
                 .AddOdinSingletonCapEventBus()
                 .AddOdinSingletonCanal()
