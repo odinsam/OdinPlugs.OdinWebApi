@@ -6,7 +6,6 @@ namespace OdinPlugs.OdinWebApi.OdinMvcCore.OdinFilter
     public class OdinAuthorizeAttribute : AuthorizeAttribute
     {
 
-
     }
 
 }

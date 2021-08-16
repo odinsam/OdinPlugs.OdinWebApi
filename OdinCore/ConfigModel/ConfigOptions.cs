@@ -253,6 +253,9 @@ namespace OdinPlugs.OdinWebApi.OdinCore.ConfigModel
     public class IdentityServerOptions
     {
         public bool Enable { get; set; }
+        public string Authority { get; set; }
+        public bool RequireHttpsMetadata { get; set; }
+        public bool ValidateAudience { get; set; }
     }
     public class CapOptions
     {

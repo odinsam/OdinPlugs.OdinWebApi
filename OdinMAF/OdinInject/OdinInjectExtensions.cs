@@ -4,7 +4,6 @@ using OdinPlugs.OdinWebApi.OdinCore.ConfigModel;
 using OdinPlugs.OdinInject.InjectPlugs;
 using OdinPlugs.OdinInject.Models.RabbitmqModels;
 using OdinPlugs.OdinInject.Models.RedisModels;
-using OdinPlugs.OdinUtils.OdinExtensions.BasicExtensions.OdinObject;
 using OdinPlugs.SnowFlake.Inject;
 
 namespace OdinPlugs.OdinWebApi.OdinMAF.OdinInject
