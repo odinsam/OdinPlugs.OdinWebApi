@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
-using OdinPlugs.OdinWebApi.OdinCore.Models.ErrorCode;
 using OdinPlugs.OdinInject.InjectCore;
 using OdinPlugs.OdinInject.InjectPlugs.OdinCacheManagerInject;
 using OdinPlugs.OdinUtils.OdinExtensions.BasicExtensions.OdinString;
@@ -13,6 +12,7 @@ using OdinPlugs.OdinUtils.Utils.OdinHttp.Models;
 using OdinPlugs.OdinWebApi.OdinMvcCore.ViewModelValidate;
 using OdinPlugs.OdinWebApi.OdinMvcCore.ServicesCore.ServicesInterface;
 using OdinPlugs.OdinWebApi.OdinMAF.OdinInject.OdinErrorCodeInject;
+using OdinPlugs.OdinModels.ErrorCode;
 
 namespace OdinPlugs.OdinWebApi.OdinCore.Models
 {

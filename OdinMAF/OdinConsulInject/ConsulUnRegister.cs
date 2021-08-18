@@ -1,7 +1,7 @@
 using System;
 using Consul;
 using Microsoft.Extensions.Hosting;
-using OdinPlugs.OdinInject.Models.ConsulModels;
+using OdinPlugs.OdinModels.ConfigModel.ConsulModels;
 
 namespace OdinPlugs.OdinWebApi.OdinMAF.OdinConsulInject
 {

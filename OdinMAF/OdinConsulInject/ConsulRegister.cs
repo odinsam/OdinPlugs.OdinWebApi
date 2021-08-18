@@ -2,7 +2,8 @@ using System;
 using Consul;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using OdinPlugs.OdinInject.Models.ConsulModels;
+using OdinPlugs.OdinModels.ConfigModel;
+using OdinPlugs.OdinModels.ConfigModel.ConsulModels;
 
 namespace OdinPlugs.OdinWebApi.OdinMAF.OdinConsulInject
 {

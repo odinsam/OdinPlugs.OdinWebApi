@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
-using OdinPlugs.OdinWebApi.OdinCore.ConfigModel;
 using OdinPlugs.OdinWebApi.OdinCore.Models;
 using OdinPlugs.OdinUtils.Utils.OdinTime;
+using OdinPlugs.OdinModels.ConfigModel;
 
 namespace OdiOdinPlugs.OdinWebApinPlugs.OdinMvcCore.MvcCore
 {

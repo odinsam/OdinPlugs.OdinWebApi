@@ -3,10 +3,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.Json;
 using OdinPlugs.OdinUtils.Utils.OdinFiles;
 
-namespace OdinPlugs.OdinWebApi.OdinCore.ConfigModel.Utils
+namespace OdinPlugs.OdinWebApi.OdinCore.Utils
 {
     public class ConfigLoadHelper
     {
+
+
         public static void LoadConfigs(string env, string currentPath, IConfigurationBuilder config, string rootPath)
         {
             // ~ 加载 *.json配置文件

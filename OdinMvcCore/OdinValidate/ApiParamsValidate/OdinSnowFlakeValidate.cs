@@ -1,9 +1,9 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
-using OdinPlugs.OdinWebApi.OdinCore.ConfigModel;
 using OdinPlugs.OdinInject;
 using OdinPlugs.OdinInject.InjectCore;
+using OdinPlugs.OdinModels.ConfigModel;
 using OdinPlugs.OdinUtils.OdinExtensions.BasicExtensions.OdinString;
 using OdinPlugs.SnowFlake.SnowFlakePlugs.ISnowFlake;
 

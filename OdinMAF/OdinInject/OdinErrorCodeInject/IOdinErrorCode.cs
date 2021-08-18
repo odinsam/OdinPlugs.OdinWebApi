@@ -1,5 +1,5 @@
 using OdinPlugs.OdinInject.InjectInterface;
-using OdinPlugs.OdinWebApi.OdinCore.Models.ErrorCode;
+using OdinPlugs.OdinModels.ErrorCode;
 
 namespace OdinPlugs.OdinWebApi.OdinMAF.OdinInject.OdinErrorCodeInject
 {

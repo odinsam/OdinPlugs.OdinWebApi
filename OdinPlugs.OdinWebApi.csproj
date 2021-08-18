@@ -37,5 +37,6 @@
     <ProjectReference Include="..\OdinPlugs.SnowFlake\OdinPlugs.SnowFlake.csproj" />
     <ProjectReference Include="..\OdinPlugs.OdinUtils\OdinPlugs.OdinUtils.csproj" />
     <ProjectReference Include="..\OdinPlugs.OdinEFCore\OdinPlugs.OdinEFCore.csproj" />
+    <ProjectReference Include="..\OdinPlugs.OdinModels\OdinPlugs.OdinModels.csproj" />
   </ItemGroup>
 </Project>

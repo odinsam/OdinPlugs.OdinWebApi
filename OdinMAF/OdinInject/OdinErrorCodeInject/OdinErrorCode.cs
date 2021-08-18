@@ -1,6 +1,6 @@
 using OdinPlugs.OdinInject.InjectCore;
 using OdinPlugs.OdinInject.InjectPlugs.OdinCacheManagerInject;
-using OdinPlugs.OdinWebApi.OdinCore.Models.ErrorCode;
+using OdinPlugs.OdinModels.ErrorCode;
 
 namespace OdinPlugs.OdinWebApi.OdinMAF.OdinInject.OdinErrorCodeInject
 {

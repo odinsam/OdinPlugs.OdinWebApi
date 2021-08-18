@@ -1,9 +1,9 @@
 using Mapster;
 using Microsoft.Extensions.DependencyInjection;
-using OdinPlugs.OdinWebApi.OdinCore.ConfigModel;
 using OdinPlugs.OdinInject.InjectPlugs;
-using OdinPlugs.OdinInject.Models.RabbitmqModels;
-using OdinPlugs.OdinInject.Models.RedisModels;
+using OdinPlugs.OdinModels.ConfigModel;
+using OdinPlugs.OdinModels.ConfigModel.RabbitMQ;
+using OdinPlugs.OdinModels.ConfigModel.RedisModels;
 using OdinPlugs.SnowFlake.Inject;
 
 namespace OdinPlugs.OdinWebApi.OdinMAF.OdinInject
@@ -28,14 +28,14 @@ namespace OdinPlugs.OdinWebApi.OdinMAF.OdinInject
                     opt =>
                     {
                         opt.OptCm = _Options.CacheManager.Adapt<OdinPlugs.OdinInject.Models.CacheManagerModels.CacheManagerModel>();
-                        opt.OptRedis = _Options.Redis.Adapt<RedisModel>();
+                        opt.OptRedis = _Options.Redis;
                     })
                 .AddOdinSingletonCapEventBus()
                 .AddOdinSingletonCanal()
                 .AddOdinCapInject(opt =>
                 {
                     opt.MysqlConnectionString = _Options.DbEntity.ConnectionString;
-                    opt.RabbitmqOptions = _Options.RabbitMQ.Adapt<RabbitMQOptions>();
+                    opt.RabbitmqOptions = _Options.RabbitMQ;
                 });
             return services;
         }

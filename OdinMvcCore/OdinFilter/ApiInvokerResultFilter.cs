@@ -2,12 +2,12 @@ using System;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Newtonsoft.Json;
-using OdinPlugs.OdinWebApi.OdinCore.ConfigModel;
 using OdinPlugs.OdinWebApi.OdinCore.Models;
 using OdinPlugs.OdinInject;
 using OdinPlugs.OdinInject.InjectCore;
 using OdinPlugs.OdinInject.InjectPlugs.OdinMongoDbInject;
 using OdinPlugs.OdinUtils.OdinSecurity.OdinRsa;
+using OdinPlugs.OdinModels.ConfigModel;
 
 namespace OdinPlugs.OdinWebApi.OdinMvcCore.OdinFilter
 {
